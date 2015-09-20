@@ -10,7 +10,7 @@ $(document).ready(
 		});
 		var currCause = randomElement(causes);
 		$('body').css('background-image', 'url(\'' + currCause.img + '\')');
-		$("#center-title").html("<h1>" + currCause.name + "</h1>");
+		$("#center-title").html("<a href=\"" + currCause.url + "\"><h1>" + currCause.name + "</h1></a>");
 		$("#center-description").html(currCause.description);
 		$("#center-assertion").html(currCause.assertion);
 

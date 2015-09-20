@@ -4,6 +4,17 @@ body {
 	color: white;
 }
 
+
+a:hover {
+    text-decoration: none;
+}
+
+::selection {
+	background: none;
+	color: #0C5;
+}
+
+
 body#background {
   background: url('http://harambeeusa.org/wp/wp-content/uploads/2010/05/Child_with_book.jpg') no-repeat 50% 50% fixed; 
   background-size: cover;
@@ -17,6 +28,11 @@ h1 {
 	color: #0C5;
 	font-weight: 300;
 	text-transform: uppercase;
+}
+
+h1:hover {
+    color: white;
+
 }
 
 h2 {
