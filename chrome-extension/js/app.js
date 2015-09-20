@@ -1,6 +1,8 @@
 URL = 'http://beautifulaltruism.dev:5000/causes'
 
 
+var currentDonationAmount = 25;
+
 $(document).ready(
 	function() {
 		$("#center-donate-url").click(function(){
@@ -11,6 +13,27 @@ $(document).ready(
 		$("#center-title").html("<h1>" + currCause.name + "</h1>");
 		$("#center-description").html(currCause.description);
 		$("#center-assertion").html(currCause.assertion);
+
+		slider = document.getElementById('slider');;
+
+		noUiSlider.create(slider, {
+			start: 25,
+			connect: 'lower',
+			step: 1,
+			range: {
+			'min': 5,
+			'max': 500
+			}
+
+		});
+
+		var donationAmount = document.getElementById('donation-amount');
+
+		slider.noUiSlider.on('update', function( values, handle ) {
+			console.log(slider.noUiSlider.get());
+			currentDonationAmount = values[handle];
+			donationAmount.innerHTML = "$" + values[handle];
+		});
 	}
 );
 
@@ -29,12 +52,12 @@ function checkout() {
       // You can access the token ID with `token.id`
     }
   });
-
+  	console.log(currentDonationAmount);
     // Open Checkout with further options
     handler.open({
       name: 'Payment Portal',
       description: 'Help the cause',
-      amount: 2000
+      amount: currentDonationAmount * 100
     });
     // e.preventDefault();
 

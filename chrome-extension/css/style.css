@@ -13,7 +13,7 @@ body#background {
 }
 
 h1 {
-	font-size: 36pt;
+	font-size: 40pt;
 	color: #0C5;
 	font-weight: 300;
 	text-transform: uppercase;
@@ -35,10 +35,15 @@ p {
 }
 
 
+#slider-container {
+	padding: 20pt;
+}
+
+
 #center {
 	text-align: center;
 	position: absolute;
-	top: 40%;
+	top: 30%;
 	bottom: 40%;
 	left: 20%;
 	right: 20%;
@@ -59,3 +64,11 @@ p {
 	background-color: rgba(0,0,0,0.5);
 }
 
+
+.inline {
+	display: inline-block;
+}
+
+#donation-amount {
+	font-weight: 800;
+}
