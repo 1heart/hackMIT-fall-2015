@@ -37,15 +37,15 @@ class ApiController < ApplicationController
 			"cupcake-girl": {
 				"name": "Buy A Cupcake And Support The Girl's Education",
 				"assertion": "Help provide girls education.",
-				"description": "Buy a cupcake and donate so that low-income countries can create their first-generation graduates and global leaders."
-				"img": "http://www.smorgasblurb.com/wp-content/uploads/2011/06/dscn08520886.jpg"
+				"description": "Buy a cupcake and donate so that low-income countries can create their first-generation graduates and global leaders.",
+				"img": "http://www.smorgasblurb.com/wp-content/uploads/2011/06/dscn08520886.jpg",
 				"donate-url": "https://tinygive.com/campaigns/buy-a-cupcake-and-sponsor-girls-education"
 			},
 			"ebola-support": {
 				"name": "Support Community Justice in Liberia",
 				"assertion": "Donate to provide resources to stop conficts caused by the ebola outbreak.",
 				"description": "Help provide those affected by the tensions between communites resulting from the ebola outbreak so that the communites can coexxist peacefully.",
-				"img": "http://cdn.thedailybeast.com/content/dailybeast/articles/2014/10/28/are-mandatory-ebola-quarantines-legal/jcr:content/image.img.2000.jpg/1414498383227.cached.jpg"
+				"img": "http://cdn.thedailybeast.com/content/dailybeast/articles/2014/10/28/are-mandatory-ebola-quarantines-legal/jcr:content/image.img.2000.jpg/1414498383227.cached.jpg",
 				"donate-url": "https://tinygive.com/campaigns/support-the-work-of-community-justice-teams-in-monrovia-liberia"
 			}
 		}
