@@ -4,7 +4,7 @@ causes = {
 		"assertion": "Do good things.",
 		"description": "Pellentesque consectetur lectus eget consectetur commodo. In varius sollicitudin magna sit amet euismod.",
 		"img": "http://harambeeusa.org/wp/wp-content/uploads/2010/05/Child_with_book.jpg",
-		"donate-url": "https://google.com"
+		// "donate-url": "https://google.com"
 	}
 }
 
@@ -15,10 +15,8 @@ $(document).ready(
 		$("#center-title").html("<h1>" + currCause.name + "</h1>");
 		$("#center-description").html(currCause.description);
 		$("#center-assertion").html(currCause.assertion);
-		$("#center-donate-url").attr('href', currCause['donate-url']);
-	}
+		// $("#center-donate-url").attr('href', currCause['donate-url']);
 );
-
 
 function randomElement(obj) {
 	var keys = Object.keys(obj);
