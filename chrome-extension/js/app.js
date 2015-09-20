@@ -15,9 +15,6 @@ $(document).ready(
 		$("#center-donate-url").click(function(){
 			checkout();
 		});
-
-
-
 		var currCause = randomElement(causes);
 		$('body').css('background-image', 'url(\'' + currCause.img + '\')');
 		$("#center-title").html("<h1>" + currCause.name + "</h1>");
