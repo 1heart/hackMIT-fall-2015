@@ -81,10 +81,48 @@ p {
 }
 
 
+#center-assertion {
+	color: cyan;
+}
 .inline {
 	display: inline-block;
 }
 
 #donation-amount {
 	font-weight: 800;
+}
+
+
+#logo {
+	position: absolute;
+	left: 5%;
+	top: 5%;
+	font-size: 30pt;
+	padding: 5pt;
+
+
+
+
+/*	border-radius: 10px;
+	background-color: rgba(0,0,0,0.8);
+*/}
+
+
+#give {
+    text-shadow: 1px 1px black;
+
+	margin: 0;
+	padding: 0;
+
+}
+
+
+#joy {
+
+	margin-left: -2pt;
+	text-transform: uppercase;
+	font-weight: 800;
+	color: cyan;
+	margin: 0;
+	padding: 0;
 }
