@@ -16,6 +16,10 @@ h1 {
 	font-size: 60pt;
 }
 
+h2 {
+	font-size: 25pt;
+}
+
 h1, h2, h3, h4 {
 	font-weight: 100;
 	text-transform: uppercase;
@@ -25,7 +29,7 @@ p {
 	font-size: 16pt;
 }
 
-#description {
+#center-description {
 	margin-left:10%;
 	margin-right:10%;
 }
@@ -34,7 +38,7 @@ p {
 #center {
 	text-align: center;
 	position: absolute;
-	top: 50%;
+	top: 40%;
 	bottom: 40%;
 	left: 20%;
 	right: 20%;
