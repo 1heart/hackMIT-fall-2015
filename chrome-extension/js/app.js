@@ -1,3 +1,5 @@
+URL = 'http://beautifulaltruism.dev:5000/causes'
+
 causes = {
 	"child_with_book": {
 		"name": "Name of cause",
@@ -10,7 +12,6 @@ causes = {
 
 $(document).ready(
 	function() {
-
 		$("#center-donate-url").click(function(){
 			checkout();
 		});
@@ -30,7 +31,6 @@ function randomElement(obj) {
 	var keys = Object.keys(obj);
 	return obj[keys[Math.floor(Math.random()*keys.length)]];
 }
-
 
 function checkout() {
   	var handler = StripeCheckout.configure({
