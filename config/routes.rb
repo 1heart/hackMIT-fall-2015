@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  root 'welcome#index'
+
   get '/causes' => 'api#causes'
 
   # The priority is based upon order of creation: first created -> highest priority.
