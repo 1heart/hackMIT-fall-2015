@@ -5,36 +5,6 @@
 
 <script src="bootstrap/js/jquery-2.1.4.js"></script>
 
-<script src="https://checkout.stripe.com/checkout.js"></script>
-
-<script>
-	function checkout() {
-	  	var handler = StripeCheckout.configure({
-	    key: 'pk_test_yHDOg6r7hbNWG5urCMtEW2zx',
-	    image: '/img/documentation/checkout/marketplace.png',
-	    locale: 'auto',
-	    token: function(token) {
-	      // Use the token to create the charge with a server-side script.
-	      // You can access the token ID with `token.id`
-	    }
-	  });
-
-	  // $('#center-donate-url').on('click', function(e) {
-	    // Open Checkout with further options
-	    handler.open({
-	      name: 'Payment Portal',
-	      description: 'Help the cause',
-	      amount: 2000
-	    });
-	    e.preventDefault();
-	  // });
-
-	  // Close Checkout on page navigation
-	  // $(window).on('popstate', function() {
-	    handler.close();
-	  // });
-	}
-</script>
 
 <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
 
@@ -49,6 +19,7 @@
 	<title>New Tab</title>
 
 	<link href="css/style.css" rel="stylesheet">
+	<script src="js/checkout.js"></script>
 
 	<script src="js/app.js"></script>
 
@@ -64,9 +35,9 @@
 			<h2 id="center-assertion">Assertion</h2>
 			<p id="center-description">Pellentesque consectetur lectus eget consectetur commodo. In varius sollicitudin magna sit amet euismod.</p>
 			<div id="pad">
-				<button onclick="checkout()" id="center-donate-url" class="button">
+				<a href="#" id="center-donate-url" class="button">
 				  <span >Donate now</span>
-				</button>
+				</a>
 			</div>		
 		</div>
 	</div>
