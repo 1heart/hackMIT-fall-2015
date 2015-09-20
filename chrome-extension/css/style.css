@@ -5,7 +5,7 @@ body {
 }
 
 body#background {
-  background: url('../img/Child_with_book.jpg') no-repeat 50% 50% fixed; 
+  background: url('http://harambeeusa.org/wp/wp-content/uploads/2010/05/Child_with_book.jpg') no-repeat 50% 50% fixed; 
   background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
